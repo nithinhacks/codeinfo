@@ -116,7 +116,7 @@ a.active,a:hover{
     justify-content: space-evenly;
 }
 
-.container .imgBx{
+.container .imgBx img{
     position: relative;
     display: flex;
     max-width: 400px;
