@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 25px;
+    font-weight: bold;
+    position: absolute;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+} 
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -1;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-evenly;
+}
+
+.container .imgBx{
+    position: relative;
+    display: flex;
+    max-width: 400px;
+}
+
+.container .main-content{
+    max-width: 400px;
+}
+
+.container .main-content h1{
+    color: #0082e6;
+    font-size: 50px;
+}
+
+@media (max-width: 1000px)
+{
+    .container{
+        position: relative;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: -1;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-evenly;
+    }
+    .container .main-content h1{
+        color: #0082e6;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 410px)
+{
+    label.logo{
+        font-size: 25px;
+    }
+    .container{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: -1;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-around;
+    }
+    .container .main-content h1{
+        font-size: 30px;
+    }
+    .container .imgBx{
+        position: relative;
+        display: flex;
+        max-width: 250px;
+    }
+    .container .main-content{
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-base{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 22px rgba(0,0,0,0.2);
+}
+
+.btn-base button{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: white;
+    margin: 0 auto;
+    margin-top: -20px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-base a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-base a:hover{
+    background-color: white;
+}
+
+.content{
+    display: flex;
+    padding: 15px 35px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-one{
+    background-color: #ffe697;
+}
+
+.img-one{
+    background: url('./images/home-gif.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+.card-two{
+    background-color: #e4e4e4;
+}
+
+.img-two{
+    background: url('./images/card-1.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+.card-three{
+    background-color: #87e0ff;
+}
+
+.img-three{
+    background: url('./images/card-2.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+@media (max-width: 350px)
+{
+    .card-base{
+        max-width: 220px;
+        height: 270px;
+        margin: 10px;
+        border-radius: 40px;
+        box-shadow: 2px 2px 22px rgba(0,0,0,0.2);
+    }
+    .btn-base button{
+        margin-top: -35px;
+        width: 170px;
+        height: 40px;
+        font-size: 25px;
+    }
+    .img-one{
+        max-width: 220px;
+    }
+    .img-two{
+        max-width: 220px;
+    }
+    .img-three{
+        max-width: 220px;
+    }
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #002966;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #0082e6;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
