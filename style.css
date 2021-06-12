@@ -19,9 +19,10 @@ nav{
 label.logo{
     color: white;
     font-size: 30px;
+    font-family: 'Poppins';
     line-height: 80px;
     padding: 0 25px;
-    font-weight: bold;
+    font-weight: bolder;
     position: absolute;
 }
 
@@ -192,6 +193,7 @@ a.active,a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    transition: 0.8s;
 }
 
 .card-base{
@@ -200,6 +202,11 @@ a.active,a:hover{
     margin: 50px;
     border-radius: 40px;
     box-shadow: 2px 2px 22px rgba(0,0,0,0.2);
+    transition: 0.8s;
+}
+
+.card-base:hover{
+    transform: scale(1.05);
 }
 
 .btn-base button{
@@ -210,10 +217,13 @@ a.active,a:hover{
     background: white;
     margin: 0 auto;
     margin-top: -20px;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.8s;
 }
 
 .btn-base a{
@@ -223,6 +233,7 @@ a.active,a:hover{
 
 .btn-base a:hover{
     background-color: white;
+    transform: scale(1.1);
 }
 
 .content{
@@ -269,6 +280,42 @@ a.active,a:hover{
     background-size: 100%;
 }
 
+.card-four{
+    background-color: #36e063;
+}
+
+.img-four{
+    background: url('./images/card-4.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+.card-five{
+    background-color: #9e9d9e;
+}
+
+.img-five{
+    background: url('./images/card-5.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
+.card-six{
+    background-color: #1ee8d0;
+}
+
+.img-six{
+    background: url('./images/card-6.gif');
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    background-size: 100%;
+}
+
 @media (max-width: 350px)
 {
     .card-base{
@@ -293,6 +340,15 @@ a.active,a:hover{
     .img-three{
         max-width: 220px;
     }
+    .img-four{
+        max-width: 220px;
+    }
+    .img-five{
+        max-width: 220px;
+    }
+    .img-six{
+        max-width: 220px;
+    }
 }
 
 footer{
@@ -307,6 +363,7 @@ footer{
     padding-top: 40px;
     color: #fff;
     margin-top: 40px;
+    z-index: -1;
 }
 
 .footer-content{
